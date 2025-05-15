@@ -11,6 +11,7 @@ Route::get('/sobre-nos', [App\Http\Controllers\SobreNosController::class, 'sobre
 // Rota de contato
 Route::get('/contato', [App\Http\Controllers\ContatoController::class, 'contato'])->name('site.contato');
 
+//Rota de fornecedor
 Route::get('/fornecedor', [App\Http\Controllers\FornecedorController::class, 'index'])->name('site.fornecedor');
 
 // Rota de login
