@@ -13,7 +13,7 @@ Route::get('/contato', [App\Http\Controllers\ContatoController::class, 'contato'
 Route::post('/contato', [App\Http\Controllers\ContatoController::class, 'contato'])->name('site.contato');
 
 //Rota de fornecedor
-Route::get('/fornecedores', [App\Http\Controllers\FornecedorController::class, 'index'])->name('site.fornecedor');
+Route::get('/fornecedor', [App\Http\Controllers\FornecedorController::class, 'index'])->name('site.fornecedor');
 
 // Rota de login
 Route::get('/login', function() { return 'Login'; })->name('site.login');
