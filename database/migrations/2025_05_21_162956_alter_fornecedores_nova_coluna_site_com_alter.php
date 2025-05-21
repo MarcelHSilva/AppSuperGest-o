@@ -11,18 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('produtos', function (Blueprint $table) {
-            $table->decimal('preco_venda', 8, 2)->default(0.01)->change();
+        Schema::table('fornecedores', function (Blueprint $table) {
+           $table->string('site', 150)->after('nome')->nullable(); 
         });
     }
-    
+
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::table('produtos', function (Blueprint $table) {
-            $table->decimal('preco_venda', 8, 2)->default(0.01)->change();
+        Schema::table('fornecedores', function (Blueprint $table) {
+           $table->dropColumn('site'); 
         });
     }
 };
